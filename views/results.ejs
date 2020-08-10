@@ -1,0 +1,45 @@
+<%- include("partials/header") -%>
+<link rel="stylesheet" href="/css/login.css">
+
+<p>
+<div class="listOfPrediction">
+	<h1>These Animes for You :</h1>
+  <!-- Makes POST request to /login route -->
+  <% var test = length; %>
+<br>
+</div>
+</p>
+
+<div class="card-group">
+	<% animeList.forEach(function(i){ %>
+
+	<div class="card">
+    <div class="card-body">
+      <h6 class="card-title"><%=(i) %></h6>
+			<br>
+			<p class="card-text"><%=test %></p>
+
+    </div>
+  </div>
+	<% test=test-1}); %>
+
+</div>
+
+
+<br>
+<br>
+<nav class="navbar fixed-bottom navbar-light bg-light">
+	<a class="navbar-brand" href="/"><button type="button" class="btn" name="button">To retry click here</button></a>
+	<a href="/">click here</a>
+
+</nav>
+<div class="row">
+	<div class="col-lg-2">
+
+	</div>
+</div>
+
+
+
+
+<%- include("partials/footer") -%>

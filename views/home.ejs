@@ -1,0 +1,16 @@
+<%- include("partials/header") -%>
+
+<link rel="stylesheet" href="/css/login.css">
+
+<div class="login">
+	<h1>Anime Sugggestor</h1>
+  <!-- Makes POST request to /login route -->
+  <form action="/" method="POST">
+      <input placeholder="Enter Anime name" type="text" class="form-control" name="Name">
+    <button type="submit" class="btn btn-primary btn-block btn-large">Search</button>
+
+  </form>
+</div>
+
+
+<%- include("partials/footer") -%>
